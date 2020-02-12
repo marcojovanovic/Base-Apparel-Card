@@ -1,0 +1,188 @@
+@import 'variables';
+
+.letter {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 5%;
+
+  @media only screen and(max-width:$bp-medium) {
+
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  &-img {
+    max-width: 8%;
+
+    position: absolute;
+    top: 15%;
+    left: 22.6%;
+    z-index: 10;
+
+    @media only screen and(max-width:$bp-medium) {
+      top: 5%;
+      max-width: 14rem !important;
+
+
+    }
+
+  }
+
+  &-title {
+
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    margin-top: 19rem;
+
+  }
+
+  &-span {
+    color: $desaturatedRed;
+    font-weight: 300;
+  }
+
+  &-text {
+    color: $desaturatedRed;
+
+
+    @media only screen and(max-width:$bp-medium) {
+
+      font-size: 2.5rem;
+    }
+
+    @media only screen and(max-width:$bp-small) {
+
+      font-size: 1.8rem;
+    }
+
+    @media only screen and(max-width:$bp-smallest) {
+
+      font-size: 1.2rem;
+    }
+
+  }
+
+  &-input {
+    max-width: 68%;
+    border-radius: 30px;
+    height: 6rem;
+    appearance: none;
+    outline: none;
+    padding-left: 2rem !important;
+    font-family: inherit;
+    font-size: 1.7rem !important;
+    letter-spacing: 0.2rem;
+    background: transparent;
+    opacity: 0.5;
+    z-index: -3;
+
+
+
+    &::placeholder {
+      color: $desaturatedRed;
+    }
+
+
+    &--container {
+      display: flex;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+
+      @media only screen and(max-width:$bp-medium) {
+
+        margin-left: 10%;
+        width: 100%;
+      }
+
+      @media only screen and(max-width:$bp-small) {
+
+        margin-left: 10%;
+        min-width: 100%;
+      }
+
+
+    }
+
+    &--img {
+      width: 16.5%;
+      padding: 1.5rem 4rem;
+      border: 1px solid transparent;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px;
+      background: $softRed;
+      margin-left: -5rem;
+
+      @media only screen and(max-width:$bp-medium) {
+
+        max-width: 12%;
+        padding: 1rem 3rem;
+      }
+
+      @media only screen and(max-width:$bp-smallest) {
+
+        max-width: 16%;
+        padding: 1rem 3rem;
+      }
+
+
+    }
+  }
+
+  &-content {
+
+    background: url('../img/bg-pattern-desktop.svg');
+    background-position: bottom left;
+    background-size: cover;
+    height: 85rem;
+    padding-top: 10rem;
+    padding-left: 13rem;
+    opacity: 0.7;
+    width: 50%;
+    position: relative;
+
+    @media only screen and(max-width:$bp-medium) {
+
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+      padding-top: 0;
+    }
+
+  }
+
+  &-picture {
+    width: 45%;
+
+    &--img {
+
+      height: 85rem;
+      object-fit: cover;
+      min-width: 100%;
+    }
+
+
+    @media only screen and(max-width:$bp-medium) {
+
+      width: 100%;
+      margin-top: 7rem;
+    }
+
+  }
+
+  &-valid {
+    color: rgb(231, 20, 20);
+    margin-left: 1rem;
+    display: none;
+    font-size: 1rem;
+
+  }
+
+}

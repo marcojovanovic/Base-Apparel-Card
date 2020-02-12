@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" />
+  <title>BaseApparel</title>
+</head>
+
+<body>
+
+
+  <div class='container'>
+    <img src='img/logo.svg' alt='' class='letter-img' />
+    <section class='letter'>
+      <div class='letter-content'>
+        <h1 class='letter-title'><span class='letter-span'>We'Re</span><br> Coming<br> Soon</h1>
+        <p class='letter-text'>Hello fellow shoppers! We're currently building our new<br> fashion store. Add your email
+          below to stay up-to-date with<br> announcements and our launch deals</p>
+        <div class='letter-input--container'>
+
+          <input type='email' class='letter-input' id='email' placeholder="Email Adress" required />
+
+          <img src='img/icon-arrow.svg' class='letter-input--img' id='icon' />
+
+        </div>
+        <small class='letter-valid'>Please provide a valid email</small>
+      </div>
+      <div class='letter-picture'>
+        <img src='img/hero-desktop.jpg' class='letter-picture--img' alt='' />
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.querySelector('#icon').addEventListener('click', () => {
+
+      document.querySelector('.letter-valid').style.display = 'block'
+
+    })
+  </script>
+</body>
+
+</html>
